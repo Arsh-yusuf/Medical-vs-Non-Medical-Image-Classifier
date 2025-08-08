@@ -10,8 +10,8 @@ The system can take input from:
 - A **website or image URL** (downloads and classifies all images)
 
 The app uses an **ensemble of two EfficientNet-B0 models**:
-- **Model A**: Original model trained on diverse medical and non-medical images, strong on ultrasound and general medical imagery.
-- **Model B**: Fine-tuned model trained with additional MRI and X-ray images, plus challenging non-medical examples (cars, bikes).
+- **Model 1**: Original model trained on diverse medical and non-medical images, strong on ultrasound and general medical imagery.
+- **Model 2**: Fine-tuned model trained with additional MRI and X-ray images, plus challenging non-medical examples (cars, bikes).
 
 Both models contribute to predictions via **probability averaging** for more robust classification.
 
@@ -76,3 +76,4 @@ A small test set (~200 images, 100 medical + 100 non-medical) was used.
 ### Install Dependencies
 ```bash
 pip install streamlit torch torchvision pillow pymupdf requests beautifulsoup4 pandas
+
